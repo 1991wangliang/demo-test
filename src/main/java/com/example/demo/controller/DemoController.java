@@ -4,10 +4,7 @@ import com.example.demo.ato.IndexReq;
 import com.example.demo.ato.IndexRes;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -52,6 +49,17 @@ public class DemoController {
     }
 
 
+    @GetMapping("/index3")
+    @ApiOperation(value = "首页接口3xxx",notes = "我是接口说明3xxx")
+    public List<IndexRes> index3get(@RequestBody IndexReq indexReq){
+        IndexRes indexRes = new IndexRes();
+        indexRes.setRes("success->"+indexReq.getId());
+        List<IndexRes> list = new ArrayList<>();
+        list.add(indexRes);
+        return list;
+    }
+
+
     @PostMapping("/index4")
     @ApiOperation(value = "首页接口4",notes = "我是接口说明4")
     public List<Integer> index4(@RequestBody List<IndexReq> indexReqs){
@@ -64,6 +72,17 @@ public class DemoController {
     @ApiOperation(value = "首页接口5",notes = "我是接口说明5")
     public List<Integer> index5(@RequestBody List<Integer> integers){
         List<Integer> list = new ArrayList<>();
+        return list;
+    }
+
+
+    @PostMapping("/index6")
+    @ApiOperation(value = "首页接口6",notes = "我是接口说明6")
+    public List<IndexRes> index6(@RequestParam("name") String name){
+        IndexRes indexRes = new IndexRes();
+        indexRes.setRes("success->"+name);
+        List<IndexRes> list = new ArrayList<>();
+        list.add(indexRes);
         return list;
     }
 }

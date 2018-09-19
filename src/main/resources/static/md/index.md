@@ -25,6 +25,11 @@ AMD那电脑多凉快凉快哪斯柯达 克里斯蒂娜弗兰克顺丰到付
 
 <api name="/demo/index3" type="post"></api>
 
+## 首页接口32
+
+我是接口说明3。 
+
+<api name="/demo/index3" type="get"></api>
 
 
 ## 首页接口4
