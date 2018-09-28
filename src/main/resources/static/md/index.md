@@ -8,35 +8,35 @@ AMD那电脑多凉快凉快哪斯柯达 克里斯蒂娜弗兰克顺丰到付
 
 阿达十多年
 
-<api name="/demo/index" type="post"></api>
+<api mapping="/demo/index" method="post"></api>
 
 
 ## 首页接口2
 
 我是接口说明2。 
 
-<api name="/demo/index2" type="post"></api>
 
+<api mapping="/demo/index2" method="post"></api>
 
 
 ## 首页接口3
 
 我是接口说明3。 
 
-<api name="/demo/index3" type="post"></api>
+<api mapping="/demo/index3" method="post"></api>
 
 ## 首页接口32
 
 我是接口说明3。 
 
-<api name="/demo/index3" type="get"></api>
+<api mapping="/demo/index3" method="get"></api>
 
 
 ## 首页接口4
 
 我是接口说明4。 
 
-<api name="/demo/index4" type="post"></api>
+<api mapping="/demo/index4" method="post"></api>
 
 
 
@@ -44,4 +44,4 @@ AMD那电脑多凉快凉快哪斯柯达 克里斯蒂娜弗兰克顺丰到付
 
 我是接口说明5。 
 
-<api name="/demo/index5" type="post"></api>
+<api mapping="/demo/index5" method="post"></api>
